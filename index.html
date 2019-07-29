@@ -155,6 +155,7 @@
   border:6px solid white;
   padding:10px 30px;
 }
+
 </style>
   <body style="overflow-y: scroll;overflow-x: hidden;background-color: black;">
     <!-- Reference item-->
@@ -166,15 +167,24 @@
               <a href="http://blackstar.co.in/" class="navbar-brand scrollTo"><img src="images/bb.png" width="90" height="90" alt="BlackStar" title="BlackStar" class="logo-1x"> </a>
             </div>
           </div>
-        <div class="col-md-1" style="margin-left: -5%">
-            <a href="index.html"><h2><span class="glyphicon glyphicon-home">&nbspHome</span></h2></a>
+        <div class="col-md-1" style="margin-left: -15%">
+            <a href="index.html"><h2><span class="glyphicon glyphicon-home"></span></h2></a>
         </div>
 
-        <div class='col-md-3' style="margin-left: 7%">
-        <h1 >Hello User!</h1>
+        <div class='col-md-4' style="margin-left: -12%;display:flex;">
+           <input type="text" class="newsletter-email" placeholder="Search here" style="border-width: 2px; border-style: solid; border-color: rgb(95, 104, 116);margin-left:20%;width:180px;height:30px;padding: 5px;font-size:15px" />
+           <button style="margin-left:-1px;margin-top:0px;width:200px;height:30px;border-top-right-radius:25px;border-bottom-right-radius:25px;background-color:rgb(102,176,138);color:white;font-size:13px">Search</button></input>
         </div>
 
-        <div class="col-md-3">
+        
+        </div>
+        <div class='col-md-1'>
+            <h1><a href="http://blackstar.co.in/index.php?route=account/login"><font style="color: red;">Login</font></a></h1>
+        </div>
+        <div class='col-md-2'>
+            <h1><a href="http://blackstar.co.in/index.php?route=account/login"><font style="color: red;">Register</font></a></h1>
+        </div>
+        <div class="col-md-3" style="margin-right:-10px;">
           <!-- HTML to write -->
             <a href="#" data-toggle="tooltip" title="Your shopping cart is empty!"><h1><span class="glyphicon glyphicon-shopping-cart"></span>My Cart:</h1></a>
 
@@ -187,13 +197,6 @@
               </div>
 
             </div>
-        </div>
-        <div class='col-md-2'>
-            <h1><a href="http://blackstar.co.in/index.php?route=account/login"><font style="color: red;">Login</font></a></h1>
-        </div>
-        <div class='col-md-2'>
-            <h1><a href="http://blackstar.co.in/index.php?route=account/login"><font style="color: red;">Register</font></a></h1>
-        </div>
   </div>
       </nav>
     <!-- navbar closed -->
@@ -307,6 +310,9 @@ function lsecond6(){
 function lsec6(){
     document.getElementById("image6").src="images/latest-6.jpg";
 }
+function carousel(){
+  getElementById("inam").setAttribute("first","second");
+}
 
 </script>
     <!-- pictures section closed -->
@@ -315,7 +321,7 @@ function lsec6(){
     <div class="container-fluid">
        <div class="row">
         <div class="col-sm-12">
-          <div id="inam" class="carousel slide" data-ride="carousel">
+          <div id="inam" class="carousel slide" data-ride="carousel" onclick="carousel()">
             <div class="carousel-inner">
              
 
@@ -356,7 +362,7 @@ function lsec6(){
 
 
                          
-
+                         <div class="second">
                          <div class="carousel-item">
                            <div class="container">
                               <div class="row">
@@ -389,6 +395,7 @@ function lsec6(){
                               </div>
                            </div>
                          </div>
+                       </div>
 
                   </div>
             <a href="#inam" class="carousel-control-prev" data-slide="prev">
@@ -413,109 +420,122 @@ function lsec6(){
     <!--featured section starts-->
 
  <section style="margin-top:-5%">
-    <center><h1 style="color:white;"><u>Featured</u></h1></center>
+    <center><h1 style="color:white;font-family:cursive;font-size:50px;">Featured</h1></center>
+    <br>
     <br>
     <div class="row">
-      <div class="col-md-2">
-        <div class="post">
-        <img src="images/featured-1.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond1()" id="img1" onmouseout="fsec1()">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
+       <img src="images/featured-1.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond1()" id="img1" onmouseout="fsec1()">
         <div class="post-s">
           <p>Adventure Series Blue<br>Rs.1,000.00</p>
         </div>
       </div>
       </div>
-      <div class="col-md-2">
-        <div class="post">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/featured-2.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond2()" id="img2" onmouseout="fsec2()">
         <div class="post-s">
           <p>Adventure Series Grey<br>Rs.1,000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-         <div class="post">
+      <div class="col-md-4">
+         <div class="post" style="margin-left:25%;">
         <img src="images/featured-3.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond3()" id="img3" onmouseout="fsec3()">
          <div class="post-s">
           <p>Elegance Series Blue<br>Rs.1,000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-         <div class="post">
+  </div>
+ <br>
+ <br>
+ <br>
+
+  <div class="row">
+       <div class="col-md-4">
+         <div class="post" style="margin-left:25%;">
         <img src="images/featured-4.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond4()" id="img4" onmouseout="fsec4()">
          <div class="post-s">
           <p>Highline Series Black<br>Rs.1,000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-         <div class="post">
+      <div class="col-md-4">
+         <div class="post" style="margin-left:25%;">
         <img src="images/featured-5.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond5()" id="img5" onmouseout="fsec5()">
          <div class="post-s">
           <p>Luxury Series<br>Rs.1,000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-         <div class="post">
+      <div class="col-md-4">
+         <div class="post" style="margin-left:25%;">
         <img src="images/featured-6.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="fsecond6()" id="img6" onmouseout="fsec6()">
          <div class="post-s">
           <p>Pocket Series Blue<br>Rs.1,000.00</p>
         </div>
       </div>
     </div>
-  </div>
+  </div> 
     </section>
 
     <!-- featured section closed-->
 
     <!-- latest section opens-->
       <section style="margin-top:-2%">
-    <center><h1 style="color:white;"><u>Latest</u></h1></center>
+    <center><h1 style="color:white;font-family:cursive;font-size:50px;">Latest</h1></center>
     <br>
      <div class="row">
-      <div class="col-md-2">
-        <div class="post">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/latest-1.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="lsecond1()" id="image1" onmouseout="lsec1()">
         <div class="post-s">
           <p>Turbo 2 Series White<br>Rs.1000.00</p>
         </div>
       </div>
       </div>
-      <div class="col-md-2">
-        <div class="post">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/latest-2.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="lsecond2()" id="image2" onmouseout="lsec2()">
         <div class="post-s">
           <p>Turbo 2 Series Red<br>Rs.1000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-        <div class="post">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/latest-3.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="lsecond3()" id="image3" onmouseout="lsec3()">
         <div class="post-s">
           <p>Turbo 2 Series Blue<br>Rs.1000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-        <div class="post">
+  </div>
+    <br>
+    <br>
+    <br>
+
+      <div class="row">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/latest-4.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="lsecond4()" id="image4" onmouseout="lsec4()">
         <div class="post-s">
           <p>Turbo 2 Series Black<br>Rs.1000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-        <div class="post">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/latest-5.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="lsecond5()" id="image5" onmouseout="lsec5()">
         <div class="post-s">
           <p>Turbo 2 Series White<br>Rs.1000.00</p>
         </div>
       </div>
     </div>
-      <div class="col-md-2">
-        <div class="post">
+      <div class="col-md-4">
+        <div class="post" style="margin-left:25%;">
         <img src="images/latest-6.jpg" style="height:228px;width:200px;border-radius:15px;" onmouseover="lsecond6()" id="image6" onmouseout="lsec6()">
         <div class="post-s">
           <p>Turbo 2 Series Black<br>Rs.1000.00</p>
@@ -614,7 +634,7 @@ function lsec6(){
          <section style="margin-top:-4%;background-color:black;">
           <div class="row">
             <div class="col-md-6">
-            <h4 style="font-family:cursive;margin-left:7%;color:white;">Copyright © 2018, Blackstar | Developed By SEO To Webdesign</h4>
+            <h4 style="font-family:cursive;margin-left:7%;color:white;">Copyright © 2018, Blackstar | Developed By Chitkara University</h4>
              </div>
              <div class="col-md-6">
              <i class="fa fa-facebook-official" style="margin-right:5px;font-size:30px;color:white;"></i>
