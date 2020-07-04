@@ -852,7 +852,6 @@ button.btn-large,input.btn-large {
 
 [class*=" iconfont"],[class^=iconfont] {
   font-family: iconfont!important;
-  speak: none;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
